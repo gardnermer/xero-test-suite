@@ -1,0 +1,10 @@
+{
+  "loginUrl": "https://login.xero.com/",
+  "userName": "gardnermer@gmail.com",
+  "password": "TEST@Account3",
+  "baseUrl": "https://go.xero.com/",
+  "orgName": "Demo Company (NZ)",
+  "bankName": "ANZ (NZ)",
+  "accountName": "Test Account",
+  "accountNumber": "900555239"
+}
