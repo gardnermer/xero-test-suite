@@ -10,7 +10,7 @@ Project runs on mocha and chai, using leadfoot. Written in JavaScript
 git clone https://github.com/gardnermer/xero-test-suite.git
 
 # run npm install
-# npm will also install the selenium-standalaone package
+# npm will also install the selenium-standalaone package and drivers
 # globally which allows you to pull in the selenium dependencies
 npm install
 

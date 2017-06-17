@@ -40,6 +40,7 @@ describe('Xero Tests - Add ANZ account', function (){
       .findByCssSelector(selectors.submitButton)
         .click()
         .end()
+      .then(wait.pollUntilUrl(expected.dashboardUrl, command))
       .then(asserts.checkPage(expected.dashboardUrl, expected.dashboardPageTitle, command))
   })
   it('Should be logged into expected account', function () {
