@@ -9,10 +9,10 @@ var selectors = page.selectors;
 var expected = page.expected;
 var command, session, id, server;
 
-describe('Xero Tests - Add ANZ account', function (){
+describe('Xero Tests - Add ANZ account', function () {
   this.timeout(30000);
 
-// Connect to the selenium-standalone running locally. 
+// Connect to the selenium-standalone running locally.
 // Set up capabilities of browser from file and start session
   before(function () {
     server = new Server('http://localhost:4444/wd/hub');
@@ -120,7 +120,7 @@ describe('Xero Tests - Add ANZ account', function (){
         .clearValue()
         .type(expected.accountNumber)
         .end()
-      // clicking on the account number box in order to clear the alert 
+      // clicking on the account number box in order to clear the alert
       .findByCssSelector(selectors.accountNumber)
         .click()
         .end()
@@ -171,7 +171,7 @@ describe('Xero Tests - Add ANZ account', function (){
         .end()
       .then(asserts.checkPage(expected.addAccountFromCAUrl, expected.addAccountPageTitle, command));
   });
-  // Cleaning up the test by going through and deleting the added bank account 
+  // Cleaning up the test by going through and deleting the added bank account
   it('Should be able to clean up after tests', function () {
     return command
       .then(asserts.checkTextEquals(selectors.settings, expected.settingsText, command))
@@ -209,5 +209,4 @@ describe('Xero Tests - Add ANZ account', function (){
   after(function () {
     return server.deleteSession(id);
   });
-
 });

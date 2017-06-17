@@ -8,6 +8,10 @@
     "postinstall": "selenium-standalone install",
     "test": "mocha test -R nyan --recursive"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gardnermer/xero-test-suite.git"
+  },
   "author": "Meredith Gardner",
   "license": "UNLICENSED",
   "dependencies": {
